@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708411955575
+current_stage: None
+description: null
+last_updated_timestamp: 1708411955575
+name: Random_Forest
+run_id: a6514ced1e6b4326b1f59824e8fba58e
+run_link: null
+source: runs:/a6514ced1e6b4326b1f59824e8fba58e/model_Random_Forest
+status: READY
+status_message: null
+storage_location: runs:/a6514ced1e6b4326b1f59824e8fba58e/model_Random_Forest
+user_id: null
+version: 3

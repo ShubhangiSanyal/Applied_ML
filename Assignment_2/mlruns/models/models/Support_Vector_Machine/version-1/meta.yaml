@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708412172252
+current_stage: None
+description: null
+last_updated_timestamp: 1708412172252
+name: Support_Vector_Machine
+run_id: e5913fad20814336877cba37c160ff6f
+run_link: null
+source: runs:/e5913fad20814336877cba37c160ff6f/model_Support_Vector_Machine
+status: READY
+status_message: null
+storage_location: runs:/e5913fad20814336877cba37c160ff6f/model_Support_Vector_Machine
+user_id: null
+version: 1

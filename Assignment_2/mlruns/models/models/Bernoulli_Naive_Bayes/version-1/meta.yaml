@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708411871065
+current_stage: None
+description: null
+last_updated_timestamp: 1708411871065
+name: Bernoulli_Naive_Bayes
+run_id: 069ed93287dc4f27836f16646284df84
+run_link: null
+source: runs:/069ed93287dc4f27836f16646284df84/model_Bernoulli_Naive_Bayes
+status: READY
+status_message: null
+storage_location: runs:/069ed93287dc4f27836f16646284df84/model_Bernoulli_Naive_Bayes
+user_id: null
+version: 1
