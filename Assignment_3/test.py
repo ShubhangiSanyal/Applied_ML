@@ -92,8 +92,8 @@ class TestFlaskIntegration(unittest.TestCase):
         # Close Flask app using command line
         cls.flask_process.terminate()
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
 
 
 
