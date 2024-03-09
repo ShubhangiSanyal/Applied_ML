@@ -1,4 +1,3 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 import pickle
 import pytest
@@ -10,18 +9,11 @@ from app import *
 import os
 from score import *
 
-train_df = pd.read_csv("train.csv")
 test_df = pd.read_csv("test.csv")
 
 #splitting the datframe into X and y
-X_train = train_df['text']
-y_train = train_df['spam']
 X_test = test_df['text']
 y_test = test_df['spam']
-
-tfidf = TfidfVectorizer(stop_words='english')
-
-train_tfidf = tfidf.fit_transform(X_train)
 
 loaded_model = pickle.load(open('best_model.pkl', 'rb'))
 
