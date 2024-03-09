@@ -7,24 +7,21 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model and vectorizer
-loaded_model = pickle.load(open('best_model.pkl', 'rb'))
+loaded_model = pickle.load(open("best_model.pkl", 'rb'))
 
 @app.route('/score', methods=['POST'])
-def predict_score():
+def main():
     # Get the text from the POST request
-    text = request.json.get('text')
+    #text = request.json.get('text')
 
     # Score the text using the loaded model
-    prediction, propensity = score(text, loaded_model, threshold=0.5)
+    prediction, propensity = score(request.json.get('text'), loaded_model, threshold=0.5)
 
     # Create the response JSON
-    response = {
-        'prediction': prediction,
-        'propensity': propensity
-    }
+    #response = {'prediction': prediction, 'propensity': propensity}
 
     # Return the response as JSON
-    return jsonify(response)
+    return jsonify({'prediction': prediction, 'propensity': propensity})
 
 
 if __name__ == '__main__':
