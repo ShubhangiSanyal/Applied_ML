@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Run test.py before committing code to the local main branch
+echo "Running test.py..."
+python test.py
+result=$?
+
+# Check if test.py failed
+if [ $result -ne 0 ]; then
+    echo "Tests failed. Commit aborted."
+    exit 1
+fi
+
+echo "Tests passed. Proceeding with commit."
